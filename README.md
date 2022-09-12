@@ -17,15 +17,15 @@ $ docker-compose ps
 $ curl -i http://localhost:8080/
 ```
 
-## Connecting to PHP
-```shell
-$ docker-compose exec web bash
-```
-
 ## Connecting to Mysql
 ```shell
 $ docker-compose exec mysql bash
 $ mysql -u root -p
+```
+
+## Connecting to PHP
+```shell
+$ docker-compose exec web bash
 ```
 
 ## Shut down
@@ -42,3 +42,13 @@ $ docker-compose down
  - `/users.php` (Get the list of registrated users)
  - `/contact.php` ([Get/Add/Update] user contacts)
  - `/common_contacts` (Get list of common contacts between two registrated users)
+
+## Run Tests
+[Connect to PHP](#connecting-to-php)
+```shell
+$ cd /src/challenge
+$ phpunit tests/
+```
+
+# Note:
+> The recommended API for validating phone numbers https://neutrinoapi.net/phone-validate reaches: **DAILY API LIMIT EXCEEDED** Very fast so keep in mind that phone validations can be affected
