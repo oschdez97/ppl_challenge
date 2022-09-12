@@ -7,6 +7,13 @@
 ## Documentation
 [API Documentation](https://documenter.getpostman.com/view/19210562/2s7YYpfRSk)
 
+
+## Prerequisites
+In order to run this container you'll need docker installed
+* [Windows](https://docs.docker.com/get-started/)
+* [OS X](https://docs.docker.com/get-started/)
+* [Linux](https://docs.docker.com/get-started/)
+
 ## Installation
 ```shell
 $ git clone https://github.com/oschdez97/ppl_challenge.git
